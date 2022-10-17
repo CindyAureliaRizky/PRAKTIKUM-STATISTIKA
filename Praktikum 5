@@ -1,0 +1,5 @@
+aurel = read.delim("clipboard")
+View(aurel)
+str(aurel)
+mean(aurel$Pendapatan)
+t.test(aurel$Pendapatan, mu=14500)
