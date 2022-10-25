@@ -1,0 +1,9 @@
+data_aurel=read.csv2("C:/DirectMarketing.csv")
+hist(data_aurel$AmountSpent)
+aurel=density(data_aurel$AmountSpent)
+plot(aurel)
+
+data_aurel=read.csv2("C:/houseprices.csv")
+hist(data_aurel$Price)
+aurel=density(data_aurel$Price)
+plot(aurel)
