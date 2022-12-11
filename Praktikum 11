@@ -1,0 +1,13 @@
+df_aurel = read.delim("clipboard")
+head(df_aurel)
+model<-aov(Korosi~Metode, data=df_aurel)
+summary(model)
+tukey.test<-TukeyHSD(model)
+tukey.test
+
+df_aurel=PlantGrowth
+View(df_aurel)
+model<-aov(weight~group, data=df_aurel)
+summary(model)
+tukey.test<-TukeyHSD(model)
+tukey.test
